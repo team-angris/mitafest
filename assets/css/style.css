@@ -46,8 +46,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 3rem auto 0;
+    background: #020011;
+    background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%);
 }
 
 .heroImage {
