@@ -408,3 +408,80 @@ body {
 	font-size: 0.8rem;
 	margin-top: 0.2rem;
 }
+
+/* CONTACT SECTION */
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.contactCardContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1000px;
+}
+
+.contactCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+	padding: 1rem 3rem;
+	border-radius: 7px;
+	border: 1px solid #808080;
+}
+
+.contactImageContainer {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contactDetails {
+	text-align: center;
+	font-family: "Cinzel";
+	font-weight: 400;
+	font-size: 1.2rem;
+	max-width: 18ch;
+}
+
+.contactDetails:last-of-type {
+	margin-bottom: 1rem;
+}
+
+.contactMember {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contactMemberName {
+	font-family: "Inter";
+	font-weight: 800;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+.contactMemberPhone {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 0.8rem;
+	margin-top: 0.3rem;
+}
+
+.contactMember a {
+	text-decoration: none;
+	color: #FFF;
+}
