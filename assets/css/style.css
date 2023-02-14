@@ -369,3 +369,42 @@ body {
         font-size: 0.8rem;
     }
 }
+
+/* MEMBERS SECTION */
+
+.members {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.membersContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.memberCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.memberName {
+	font-family: "Inter";
+	font-weight: 800;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+.memberDesignation {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 0.8rem;
+	margin-top: 0.2rem;
+}
