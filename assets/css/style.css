@@ -50,6 +50,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem 0;
 }
 
 .countDownItem {
@@ -72,7 +73,7 @@ body {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {daysLeft
     .heroImage {
         height: 100px;
         width: 300px;
