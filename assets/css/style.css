@@ -38,6 +38,16 @@ body {
 	font-family: "Inter";
 }
 
+@media screen and (max-width: 480px) {
+	.hideOnMobile {
+		display: none;
+	}
+}
+
+.anchorHook {
+	height: 0px;
+}
+
 .wrapper {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -46,6 +56,7 @@ body {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	position: relative;
 }
 
 .navigation {
@@ -62,7 +73,12 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin: 2rem;
+	padding: 2rem;
+	background-color: #020011;
+	z-index: 2;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .navHeading {
@@ -70,6 +86,7 @@ body {
 	margin-right: 1rem;
 	font-weight: 700;
 	margin: 0 0 0 1rem;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
@@ -89,7 +106,7 @@ body {
 /* HERO SECTION */
 
 .hero {
-	min-height: 81vh;
+	min-height: 90vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -209,6 +226,7 @@ body {
 /* ABOUT SECTION */
 
 .aboutMitafest {
+	min-height: 90vh;
 	background-color: #050102;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -265,6 +283,9 @@ body {
 		width: 300px;
 		height: 171px;
 	}
+	.aboutMitafest {
+		min-height: unset;
+	}
 }
 
 .blackToBlueTransition {
@@ -285,6 +306,7 @@ body {
 /* EVENTS SECTION */
 
 .events {
+	min-height: 90vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -414,9 +436,16 @@ body {
 		hue-rotate(292deg) brightness(85%) contrast(95%);
 }
 
+@media screen and (max-width: 480px) {
+	.events {
+		min-height: unset;
+	}
+}
+
 /* PASSES SECTION */
 
 .passes {
+	min-height: 90vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -582,11 +611,15 @@ body {
 		padding: 3px 8px;
 		font-size: 0.8rem;
 	}
+	.passes {
+		min-height: unset;
+	}
 }
 
 /* MEMBERS SECTION */
 
 .members {
+	min-height: 90vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -648,9 +681,16 @@ body {
 	margin-top: 0.2rem;
 }
 
+@media screen and (max-width: 480px) {
+	.members {
+		min-height: unset;
+	}
+}
+
 /* CONTACT SECTION */
 
 .contact {
+	min-height: 90vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -763,6 +803,12 @@ body {
 .contactMember a {
 	text-decoration: none;
 	color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+	.contact {
+		min-height: unset;
+	}
 }
 
 /* CREDITS SECTION */

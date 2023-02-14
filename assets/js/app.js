@@ -3,6 +3,26 @@ let hoursLeft = document.getElementById("hoursLeft")
 let minutesLeft = document.getElementById("minutesLeft")
 let secondsLeft = document.getElementById("secondsLeft")
 
+// let homeSpan = document.querySelector("[data-id='home']")
+// let eventsSpan = document.querySelector("[data-id='events']")
+// let aboutSpan = document.querySelector("[data-id='about']")
+// let passesSpan = document.querySelector("[data-id='passes']")
+// let membersSpan = document.querySelector("[data-id='members']")
+// let contactSpan = document.querySelector("[data-id='contact']")
+
+let navLinksDiv = document.querySelector(".navigation")
+let navLinksSpan = navLinksDiv.children
+
+for (let i = 0; i < navLinksSpan.length; i++) {
+    navLinksSpan[i].addEventListener("click", function () {
+        let id = navLinksSpan[i].getAttribute("data-id")
+        let element = document.getElementById(id)
+        element.scrollIntoView({ behavior: "smooth" })
+    })
+}
+
+
+
 let copyright = document.querySelector(".copyrights")
 
 function embedCopyRight() {
