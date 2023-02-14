@@ -5,7 +5,9 @@ html, body {
 }
 
 body {
-    background-color: #0200   11;
+    background-color: #020011;
+    color: #fff;
+    font-family: "Inter";
 }
 
 .wrapper {
@@ -25,7 +27,21 @@ body {
     font-size: 1rem;
     margin-right: 1rem;
     font-weight: 700;
-    color: #fff;
     margin: 0 0 0 1rem;
-    font-family: "Inter";
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 3rem auto 0;
+}
+
+.heroImage {
+    height: 150px;
+    width: 520px;
+}
 }
