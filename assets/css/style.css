@@ -157,12 +157,19 @@ body {
 /* EVENTS SECTION */
 
 .events {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 940px;
-	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .eventCard {
