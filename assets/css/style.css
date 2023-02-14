@@ -485,3 +485,26 @@ body {
 	text-decoration: none;
 	color: #FFF;
 }
+
+/* CREDITS SECTION */
+
+.credits {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.creditText {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 0.3rem;
+}
+
+.creditText a {
+	text-decoration: underline;
+	color: #f1b539;
+}
