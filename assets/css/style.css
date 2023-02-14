@@ -1,4 +1,15 @@
 @font-face {
+	font-family: "Inter";
+	src: url("fonts/InterMedium.eot");
+	src: url("fonts/InterMedium.eot") format("embedded-opentype"),
+		url("fonts/InterMedium.woff2") format("woff2"),
+		url("fonts/InterMedium.woff") format("woff"),
+		url("fonts/InterMedium.ttf") format("truetype"),
+		url("fonts/InterMedium.svg#InterMedium") format("svg");
+	font-display: swap;
+}
+
+@font-face {
 	font-family: "Cinzel";
 	src: url("fonts/CinzelVariableFont_wght.eot");
 	src: url("fonts/CinzelVariableFont_wght.eot") format("embedded-opentype"),
@@ -7,6 +18,7 @@
 		url("fonts/CinzelVariableFont_wght.ttf") format("truetype"),
 		url("fonts/CinzelVariableFont_wght.svg#CinzelVariableFont_wght")
 			format("svg");
+	font-display: swap;
 }
 
 html,
@@ -14,8 +26,10 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-    -webkit-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 body {
@@ -25,14 +39,28 @@ body {
 }
 
 .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 .navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin: 2rem;
 }
@@ -44,17 +72,49 @@ body {
 	margin: 0 0 0 1rem;
 }
 
+@media screen and (max-width: 480px) {
+	.navigation {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.navHeading {
+		font-size: 0.8rem;
+		margin-right: 0.5rem;
+		font-weight: 700;
+		margin-left: 0.5rem;
+	}
+}
+
 /* HERO SECTION */
 
 .hero {
 	min-height: 81vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
 	margin: 3rem auto 0;
 	background: #020011;
+	background: -o-linear-gradient(top, #020011 0%, #000000 100%, #000000 100%);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#020011),
+		color-stop(100%, #000000),
+		to(#000000)
+	);
 	background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%);
 }
 
@@ -64,16 +124,29 @@ body {
 }
 
 .countDownHolder {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 2rem 0;
 }
 
 .countDownItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 1rem 1.5rem;
 	border: 1px solid #2d3239;
@@ -91,6 +164,41 @@ body {
 	font-size: 0.8rem;
 }
 
+.swipeDown {
+	-webkit-animation: swipeDown 3s infinite;
+	animation: swipeDown 3s infinite;
+}
+
+@-webkit-keyframes swipeDown {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes swipeDown {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.heroImage {
 		height: 100px;
@@ -102,9 +210,18 @@ body {
 
 .aboutMitafest {
 	background-color: #050102;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	background: url(../images/aboutBackground.webp) no-repeat;
 	background-size: cover;
@@ -118,15 +235,15 @@ body {
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
 	color: #f1b539;
-    margin-bottom: 5rem;
+	margin-bottom: 5rem;
 }
 
 .contentHeading::after {
-    content: "_____";
-    display: block;
-    width: 60px;
-    height: 0;
-    margin: -1.3rem auto;
+	content: "_____";
+	display: block;
+	width: 60px;
+	height: 0;
+	margin: -1.3rem auto;
 }
 
 .gallery img {
@@ -152,6 +269,15 @@ body {
 
 .blackToBlueTransition {
 	background: #000000;
+	background: -o-linear-gradient(top, #000000 0%, #020011 100%, #020011 100%);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#000000),
+		color-stop(100%, #020011),
+		to(#020011)
+	);
 	background: linear-gradient(180deg, #000000 0%, #020011 100%, #020011 100%);
 	height: 5vh;
 }
@@ -159,24 +285,47 @@ body {
 /* EVENTS SECTION */
 
 .events {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .eventsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 940px;
-    margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 940px;
+	margin: 0 auto;
 }
 
 .eventCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 10px;
 	min-width: 135px;
@@ -205,42 +354,62 @@ body {
 }
 
 .eventCard.quill:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(23%) sepia(85%)
+		saturate(2284%) hue-rotate(290deg) brightness(85%) contrast(98%);
 	filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(2284%)
 		hue-rotate(290deg) brightness(85%) contrast(98%);
 }
 .eventCard.music:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(64%) sepia(96%)
+		saturate(352%) hue-rotate(356deg) brightness(101%) contrast(89%);
 	filter: brightness(0) saturate(100%) invert(64%) sepia(96%) saturate(352%)
 		hue-rotate(356deg) brightness(101%) contrast(89%);
 }
 .eventCard.entrepreneurship:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(57%) sepia(57%)
+		saturate(2826%) hue-rotate(62deg) brightness(91%) contrast(83%);
 	filter: brightness(0) saturate(100%) invert(57%) sepia(57%) saturate(2826%)
 		hue-rotate(62deg) brightness(91%) contrast(83%);
 }
 .eventCard.question:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(74%) sepia(48%)
+		saturate(5966%) hue-rotate(155deg) brightness(94%) contrast(89%);
 	filter: brightness(0) saturate(100%) invert(74%) sepia(48%) saturate(5966%)
 		hue-rotate(155deg) brightness(94%) contrast(89%);
 }
 .eventCard.tamil:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(10%) sepia(67%)
+		saturate(7047%) hue-rotate(353deg) brightness(97%) contrast(99%);
 	filter: brightness(0) saturate(100%) invert(10%) sepia(67%) saturate(7047%)
 		hue-rotate(353deg) brightness(97%) contrast(99%);
 }
 .eventCard.drama:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(43%) sepia(93%)
+		saturate(546%) hue-rotate(58deg) brightness(105%) contrast(84%);
 	filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(546%)
 		hue-rotate(58deg) brightness(105%) contrast(84%);
 }
 .eventCard.pda:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(66%) sepia(25%)
+		saturate(6971%) hue-rotate(155deg) brightness(95%) contrast(89%);
 	filter: brightness(0) saturate(100%) invert(66%) sepia(25%) saturate(6971%)
 		hue-rotate(155deg) brightness(95%) contrast(89%);
 }
 .eventCard.ted:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(15%) sepia(90%)
+		saturate(4579%) hue-rotate(351deg) brightness(71%) contrast(103%);
 	filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(4579%)
 		hue-rotate(351deg) brightness(71%) contrast(103%);
 }
 .eventCard.dance:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(89%) sepia(14%)
+		saturate(7354%) hue-rotate(334deg) brightness(107%) contrast(89%);
 	filter: brightness(0) saturate(100%) invert(89%) sepia(14%) saturate(7354%)
 		hue-rotate(334deg) brightness(107%) contrast(89%);
 }
 .eventCard.cultural:hover img {
+	-webkit-filter: brightness(0) saturate(100%) invert(23%) sepia(62%)
+		saturate(3281%) hue-rotate(292deg) brightness(85%) contrast(95%);
 	filter: brightness(0) saturate(100%) invert(23%) sepia(62%) saturate(3281%)
 		hue-rotate(292deg) brightness(85%) contrast(95%);
 }
@@ -248,22 +417,40 @@ body {
 /* PASSES SECTION */
 
 .passes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .passesContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .passCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-width: 200px;
 	margin: 1rem;
@@ -271,30 +458,37 @@ body {
 }
 
 .imageContainer {
-    width: 460px;
-    height: 168px;
-    overflow: hidden;
-    border-radius: 14px;
-    margin-bottom: 1rem;
-    border: 1px solid #ffffff38;
+	width: 460px;
+	height: 168px;
+	overflow: hidden;
+	border-radius: 14px;
+	margin-bottom: 1rem;
+	border: 1px solid #ffffff38;
 }
 
 .imageContainer img {
-    height: auto;
-    width: 529px;
-    margin-left: -1px;
-    margin-top: -1px;
+	height: auto;
+	width: 529px;
+	margin-left: -1px;
+	margin-top: -1px;
 }
 
 .rightMost {
-    position: absolute;
-    right: 9px;
-    top: 5%;
-    font-family: "Inter";
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 82%;
+	position: absolute;
+	right: 9px;
+	top: 5%;
+	font-family: "Inter";
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	height: 82%;
 }
 
 .eventType {
@@ -309,39 +503,53 @@ body {
 }
 
 .getPass {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: flex-end;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .getPass button {
-    -webkit-appearance: button;
-    appearance: button;
-    background-color: #FFFFFF;
-    background-image: none;
-    border: 1px solid #00000000;
-    border-radius: 4px;
-    box-shadow: #000 2px 2px 0 1px, #fff 4px 4px 0 0;
-    box-sizing: border-box;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 10px 0;
-    overflow: visible;
-    padding: 6px 15px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    -webkit-user-select: none;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    font-family: "Inter";
-    font-weight: bolder;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #00000000;
+	border-radius: 4px;
+	-webkit-box-shadow: #000 2px 2px 0 1px, #fff 4px 4px 0 0;
+	box-shadow: #000 2px 2px 0 1px, #fff 4px 4px 0 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #000000;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0 5px 10px 0;
+	overflow: visible;
+	padding: 6px 15px;
+	text-align: center;
+	text-transform: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-family: "Inter";
+	font-weight: bolder;
 }
 
 .getPass button:focus {
@@ -353,46 +561,75 @@ body {
 }
 
 .getPass button:active {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
 	box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
 	outline: 0;
 }
 
 .getPass button:not([disabled]):active {
+	-webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
 	box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+	-webkit-transform: translate(2px, 2px);
+	-ms-transform: translate(2px, 2px);
 	transform: translate(2px, 2px);
 }
 
 @media screen and (max-width: 480px) {
-    .imageContainer {
-        width: 350px;
-    }
-    .getPass button {
-        padding: 3px 8px;
-        font-size: 0.8rem;
-    }
+	.imageContainer {
+		width: 350px;
+	}
+	.getPass button {
+		padding: 3px 8px;
+		font-size: 0.8rem;
+	}
 }
 
 /* MEMBERS SECTION */
 
 .members {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 2rem;
 }
 
 .membersContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
 .memberCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 1rem;
 }
@@ -414,25 +651,50 @@ body {
 /* CONTACT SECTION */
 
 .contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 3rem;
 }
 
 .contactCardContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	max-width: 1000px;
 }
 
 .contactCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 1rem;
 	padding: 1rem 3rem;
@@ -445,8 +707,14 @@ body {
 	width: 100px;
 	border-radius: 50%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -463,9 +731,18 @@ body {
 }
 
 .contactMember {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -485,15 +762,24 @@ body {
 
 .contactMember a {
 	text-decoration: none;
-	color: #FFF;
+	color: #fff;
 }
 
 /* CREDITS SECTION */
 
 .credits {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin-bottom: 1rem;
 }
