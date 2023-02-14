@@ -1,140 +1,226 @@
 @font-face {
-    font-family: 'Cinzel';
-    src: url('fonts/CinzelVariableFont_wght.eot');
-    src: url('fonts/CinzelVariableFont_wght.eot') format('embedded-opentype'),
-         url('fonts/CinzelVariableFont_wght.woff2') format('woff2'),
-         url('fonts/CinzelVariableFont_wght.woff') format('woff'),
-         url('fonts/CinzelVariableFont_wght.ttf') format('truetype'),
-         url('fonts/CinzelVariableFont_wght.svg#CinzelVariableFont_wght') format('svg');
+	font-family: "Cinzel";
+	src: url("fonts/CinzelVariableFont_wght.eot");
+	src: url("fonts/CinzelVariableFont_wght.eot") format("embedded-opentype"),
+		url("fonts/CinzelVariableFont_wght.woff2") format("woff2"),
+		url("fonts/CinzelVariableFont_wght.woff") format("woff"),
+		url("fonts/CinzelVariableFont_wght.ttf") format("truetype"),
+		url("fonts/CinzelVariableFont_wght.svg#CinzelVariableFont_wght")
+			format("svg");
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
 }
 
 body {
-    background-color: #020011;
-    color: #fff;
-    font-family: "Inter";
+	background-color: #020011;
+	color: #fff;
+	font-family: "Inter";
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 2rem;
 }
 
 .navHeading {
-    font-size: 1rem;
-    margin-right: 1rem;
-    font-weight: 700;
-    margin: 0 0 0 1rem;
+	font-size: 1rem;
+	margin-right: 1rem;
+	font-weight: 700;
+	margin: 0 0 0 1rem;
 }
 
 /* HERO SECTION */
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 3rem auto 0;
-    background: #020011;
-    background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 3rem auto 0;
+	background: #020011;
+	background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%);
 }
 
 .heroImage {
-    height: 150px;
-    width: 520px;
+	height: 150px;
+	width: 520px;
 }
 
 .countDownHolder {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2rem 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem 0;
 }
 
 .countDownItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1.5rem;
-    border: 1px solid #2d3239;
-    margin: 0.5rem;
-    min-width: 74px;
-    border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1.5rem;
+	border: 1px solid #2d3239;
+	margin: 0.5rem;
+	min-width: 74px;
+	border-radius: 12px;
 }
 
 .countDownItem .content {
-    font-size: 1.3rem;
-    margin-right: 0.5rem;
+	font-size: 1.3rem;
+	margin-right: 0.5rem;
 }
 
 .countDownItem .label {
-    font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
 @media screen and (max-width: 480px) {
-    .heroImage {
-        height: 100px;
-        width: 300px;
-    }
+	.heroImage {
+		height: 100px;
+		width: 300px;
+	}
 }
 
 /* ABOUT SECTION */
 
 .aboutMitafest {
-    background-color: #050102;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(../images/aboutBackground.webp) no-repeat;
-    background-size: cover;
+	background-color: #050102;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url(../images/aboutBackground.webp) no-repeat;
+	background-size: cover;
 }
 
 .contentHeading {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 2rem 0;
-    font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #F1B539;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 2rem 0;
+	font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	color: #f1b539;
 }
 
 .gallery img {
-    width: 500px;
-    height: 285px;
+	width: 500px;
+	height: 285px;
 }
 
 .someText {
-    font-family: "Inter";
-    font-size: 0.7rem;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    margin: 3rem auto;   
+	font-family: "Inter";
+	font-size: 0.7rem;
+	width: 80%;
+	max-width: 600px;
+	text-align: center;
+	margin: 3rem auto;
 }
 
 @media screen and (max-width: 480px) {
-    .gallery img {
-        width: 300px;
-        height: 171px;
-    }
+	.gallery img {
+		width: 300px;
+		height: 171px;
+	}
 }
 
 .blackToBlueTransition {
-    background: #000000;
-    background: linear-gradient(180deg, #000000 0%, #020011 100%, #020011 100%);
-    height: 5vh;
+	background: #000000;
+	background: linear-gradient(180deg, #000000 0%, #020011 100%, #020011 100%);
+	height: 5vh;
+}
+
+/* EVENTS SECTION */
+
+.events {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.eventCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	min-width: 135px;
+	margin: 1rem 0.5rem;
+	padding: 1rem;
+	min-height: 103px;
+	border: 1px solid #6e6e6e;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.eventCard .eventName {
+	font-family: "Cinzel";
+	font-weight: 600;
+	font-size: 0.7rem;
+	pointer-events: none;
+}
+
+.eventCard .eventOrganizer {
+	font-family: "Inter";
+	font-size: 0.7rem;
+	text-align: center;
+	max-width: 135px;
+	margin: 0 auto;
+	pointer-events: none;
+}
+
+.eventCard.quill:hover img {
+	filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(2284%)
+		hue-rotate(290deg) brightness(85%) contrast(98%);
+}
+.eventCard.music:hover img {
+	filter: brightness(0) saturate(100%) invert(64%) sepia(96%) saturate(352%)
+		hue-rotate(356deg) brightness(101%) contrast(89%);
+}
+.eventCard.entrepreneurship:hover img {
+	filter: brightness(0) saturate(100%) invert(57%) sepia(57%) saturate(2826%)
+		hue-rotate(62deg) brightness(91%) contrast(83%);
+}
+.eventCard.question:hover img {
+	filter: brightness(0) saturate(100%) invert(74%) sepia(48%) saturate(5966%)
+		hue-rotate(155deg) brightness(94%) contrast(89%);
+}
+.eventCard.tamil:hover img {
+	filter: brightness(0) saturate(100%) invert(10%) sepia(67%) saturate(7047%)
+		hue-rotate(353deg) brightness(97%) contrast(99%);
+}
+.eventCard.drama:hover img {
+	filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(546%)
+		hue-rotate(58deg) brightness(105%) contrast(84%);
+}
+.eventCard.pda:hover img {
+	filter: brightness(0) saturate(100%) invert(66%) sepia(25%) saturate(6971%)
+		hue-rotate(155deg) brightness(95%) contrast(89%);
+}
+.eventCard.ted:hover img {
+	filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(4579%)
+		hue-rotate(351deg) brightness(71%) contrast(103%);
+}
+.eventCard.dance:hover img {
+	filter: brightness(0) saturate(100%) invert(89%) sepia(14%) saturate(7354%)
+		hue-rotate(334deg) brightness(107%) contrast(89%);
+}
+.eventCard.cultural:hover img {
+	filter: brightness(0) saturate(100%) invert(23%) sepia(62%) saturate(3281%)
+		hue-rotate(292deg) brightness(85%) contrast(95%);
 }
