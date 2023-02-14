@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fonts/CinzelVariableFont_wght.eot');
+    src: url('fonts/CinzelVariableFont_wght.eot') format('embedded-opentype'),
+         url('fonts/CinzelVariableFont_wght.woff2') format('woff2'),
+         url('fonts/CinzelVariableFont_wght.woff') format('woff'),
+         url('fonts/CinzelVariableFont_wght.ttf') format('truetype'),
+         url('fonts/CinzelVariableFont_wght.svg#CinzelVariableFont_wght') format('svg');
+}
+
 html, body {
     margin: 0;
     padding: 0;
