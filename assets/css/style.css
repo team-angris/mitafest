@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #0200   11;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem;
+}
+
+.navHeading {
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0 1rem;
+    font-family: "Inter";
+}
