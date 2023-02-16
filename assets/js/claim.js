@@ -1,5 +1,4 @@
-let API_ENDPOINT = `http://localhost:3003/api/users`
-
+let API_ENDPOINT = `https://mitafest-server.onrender.com/api/users`
 
 async function get(key) {
 	return await idbKeyval.get(key)
