@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MITAFEST">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./assets/css/continue.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Complete your payment</title>
+    <script defer src="./assets/js/idbkeyval.js"></script>
+    <script defer src="./assets/js/continue.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <span class="welcomeHeader">
+            Complete your payment...
+        </span>
+        <div class="passes"></div>
+
+        <span class="welcomeHeader subHeader">
+            You are about to pay ₹<span id="amount"></span> through UPI
+        </span>
+
+        <div class="paymentHolder">
+            <div class="qrCodeContainer"></div>
+
+            <a href="" id="paymentLink" class="anchor">Click here to open your UPI App</a>
+        </div>
+
+        <div class="welcomeHeader subHeader important">
+            <span><b>IMPORTANT:</b> Please make note of your RefNo. of your payment transaction if your payment is successful.</span>
+            <span><b>YOU WILL NEED IT TO COLLECT THE PASSES AT THE VENUE</b></span>
+        </div>
+
+        <button type="button" id="claimButton" class="submit">Claim your digital pass 🎫</button>
+    </div>
+</body>
+
+</html>
