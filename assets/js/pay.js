@@ -42,13 +42,13 @@ let availablePasses = [
 		name: "Saturday Events Pass",
 		price: 300,
 		type: "5",
-		imgSrc: "3",
+		imgSrc: "4",
 	},
 	{
 		name: "ELITE (S+)",
-		price: 5000,
+		price: "",
 		type: "1",
-		imgSrc: "4",
+		imgSrc: "3",
 	},
 ]
 
