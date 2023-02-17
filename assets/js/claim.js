@@ -73,7 +73,10 @@ function getPassHTML(type, refNo="") {
 
 claimButton.addEventListener("click", async () => {
     let refNo = refNoInput.value
-
+    if (refNo === "") {
+        alert("Please enter a valid reference number")
+        return false
+    }
     let claimedPasses = await get("claimedPasses")
     if (claimedPasses === undefined) {
         claimedPasses = []
