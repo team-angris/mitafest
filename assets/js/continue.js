@@ -74,13 +74,13 @@ function getPassHTML(type) {
     `
 }
 
-let vpa = `9360411346@okbizicici`
-let name = `MITAFEST`
+let vpa = `thirunavukarasujasekar@okaxis`
+let paymentFor = `MITAFEST`
 let note = `MITAFEST PASS`
 
 function getQRCode(price) {
     let amount = parseInt(price)
-    let url = `https://upiqr.in/api/qr?name=${name}&vpa=${vpa}&note=${note}&amount=${amount}.00`
+    let url = `https://upiqr.in/api/qr?name=${paymentFor}&vpa=${vpa}&note=${note}&amount=${amount}.00`
     let img = document.createElement("img")
     img.src = url
     img.alt = "QR Code"
