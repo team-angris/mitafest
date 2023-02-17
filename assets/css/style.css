@@ -667,6 +667,10 @@ body {
 	margin: 1rem;
 }
 
+.memberCard img {
+	border-radius: 50%;
+}
+
 .memberName {
 	font-family: "Inter";
 	font-weight: 800;
