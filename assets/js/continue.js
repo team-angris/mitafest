@@ -21,7 +21,7 @@ let availablePassesArray = ["all", "10", "5", "1"]
 let availablePasses = [
 	{
 		name: "All Events Pass",
-		price: 400,
+		price: 500,
 		type: "all",
 		imgSrc: "2",
 	},
@@ -33,13 +33,13 @@ let availablePasses = [
 	},
 	{
 		name: "Saturday Events Pass",
-		price: 200,
+		price: 300,
 		type: "5",
 		imgSrc: "3",
 	},
 	{
-		name: "Elite Pass",
-		price: 100,
+		name: "ELITE (S+)",
+		price: 5000,
 		type: "1",
 		imgSrc: "4",
 	},
