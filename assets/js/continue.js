@@ -74,8 +74,8 @@ function getPassHTML(type) {
     `
 }
 
-// let vpa = `9360411346@okbizicici`
-let vpa = `thirunavukarasurajasekar@okaxis`
+let vpa = `9360411346@okbizicici`
+// let vpa = `thirunavukarasurajasekar@okaxis`
 let name = `MITAFEST`
 let note = `MITAFEST PASS`
 
