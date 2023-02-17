@@ -33,7 +33,7 @@ body {
 }
 
 body {
-	background-color: #020011;
+	background-color: #000000;
 	color: #fff;
 	font-family: "Inter";
 }
@@ -74,7 +74,7 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	padding: 2rem;
-	background-color: #020011;
+	background-color: #000000;
 	z-index: 2;
 	position: -webkit-sticky;
 	position: sticky;
@@ -122,7 +122,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	margin: 3rem auto 0;
-	background: #020011;
+	/* background: #020011;
 	background: -o-linear-gradient(top, #020011 0%, #000000 100%, #000000 100%);
 	background: -webkit-gradient(
 		linear,
@@ -132,7 +132,15 @@ body {
 		color-stop(100%, #000000),
 		to(#000000)
 	);
-	background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%);
+	background: linear-gradient(180deg, #020011 0%, #000000 100%, #000000 100%); */
+	position: relative;
+}
+
+.hero video {
+	position: absolute;
+    z-index: -1;
+    filter: grayscale(100%);
+	width: 100%;
 }
 
 .heroImage {
@@ -221,6 +229,10 @@ body {
 		height: 100px;
 		width: 300px;
 	}
+	.hero video {
+		height: 100%;
+		width: unset;
+	}
 }
 
 /* ABOUT SECTION */
@@ -241,7 +253,6 @@ body {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	background: url(../images/aboutBackground.webp) no-repeat;
 	background-size: cover;
 }
 

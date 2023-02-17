@@ -75,13 +75,18 @@ body {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    max-width: 90vw;
+    max-width: 45vw;
 }
 
 .important span {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+	.important {
+		max-width: 90vw;
+	}
+}
 
 .passes {
 	display: -webkit-box;
