@@ -305,6 +305,7 @@ body {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	background: url(../../assets/images/aboutBackground.webp);
 	background-size: cover;
 }
 
