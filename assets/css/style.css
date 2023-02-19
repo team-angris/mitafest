@@ -73,7 +73,7 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 2rem;
+	padding: 1rem;
 	background-color: #000000;
 	z-index: 2;
 	position: -webkit-sticky;
@@ -81,12 +81,52 @@ body {
 	top: 0;
 }
 
+.navButtonOrange{
+	background-color: #E5451F;
+    padding: 0.6em 0.8em;
+    box-shadow: #000 2px 2px 0 1px, #E5451F 4px 4px 0 0;
+	transition: 0.2s;
+}
+
+.navButtonOrange:hover {
+	transform: scale(1.05);
+}
+
+.navButtonOrange:active {
+	transform: scale(0.95);
+}
+
 .navHeading {
 	font-size: 1rem;
-	margin-right: 1rem;
-	font-weight: 700;
-	margin: 0 0 0 1rem;
-	cursor: pointer;
+    margin-right: 1rem;
+    font-weight: 700;
+    /* margin: 0 0 0 1rem; */
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.navHeading::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -12px;
+    background: #FFF;
+    height: 13px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.navHeading:hover:after,
+.navHeading:focus:after,
+.navHeading:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -100,6 +140,9 @@ body {
 		margin-right: 0.5rem;
 		font-weight: 700;
 		margin-left: 0.5rem;
+	}
+	.navHeading.hideOnMobile {
+		display: none;
 	}
 }
 
