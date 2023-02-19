@@ -191,8 +191,13 @@ body {
 }
 
 .heroImage {
-	height: 150px;
-	width: 520px;
+	height: 101px;
+    width: 520px;
+	cursor: pointer;
+}
+
+.heroSecond {
+	display: none;
 }
 
 .countDownHolder {
@@ -273,7 +278,7 @@ body {
 
 @media screen and (max-width: 480px) {
 	.heroImage {
-		height: 100px;
+		height: 60px;
 		width: 300px;
 	}
 	.hero video {
