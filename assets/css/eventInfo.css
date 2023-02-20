@@ -1,1 +1,152 @@
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/InterMedium.eot");
+	src: url("fonts/InterMedium.eot") format("embedded-opentype"),
+		url("fonts/InterMedium.woff2") format("woff2"),
+		url("fonts/InterMedium.woff") format("woff"),
+		url("fonts/InterMedium.ttf") format("truetype"),
+		url("fonts/InterMedium.svg#InterMedium") format("svg");
+	font-display: swap;
+}
 
+@font-face {
+	font-family: "Cinzel";
+	src: url("fonts/CinzelVariableFont_wght.eot");
+	src: url("fonts/CinzelVariableFont_wght.eot") format("embedded-opentype"),
+		url("fonts/CinzelVariableFont_wght.woff2") format("woff2"),
+		url("fonts/CinzelVariableFont_wght.woff") format("woff"),
+		url("fonts/CinzelVariableFont_wght.ttf") format("truetype"),
+		url("fonts/CinzelVariableFont_wght.svg#CinzelVariableFont_wght")
+			format("svg");
+	font-display: swap;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color: #000000;
+	color: #fff;
+	font-family: "Inter";
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.contentHeading {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 2rem 0;
+	font-family: "Cinzel", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	color: #f1b539;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.contentHeading::after {
+	content: "_____";
+	display: block;
+	width: 60px;
+	height: 0;
+	margin: -1.3rem auto;
+}
+
+.contentSubHeading {
+	text-align: center;
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.organizedEventsHeadingContainer {
+	display: flex;
+	margin: 0 2rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.organizedEventsHeading {
+	padding: 1rem;
+	margin: 1rem;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.selected {
+	border: 1px solid #f1b539;
+	color: #f1b539;
+}
+
+.organizedEventsContainer {
+	margin: 0 2rem 3rem;
+	border: 1px solid #f1b539;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.eventHeading {
+	color: #f1b539;
+	margin: 1.5rem 0 0.9rem;
+}
+
+.organizedEventName {
+	text-align: left;
+}
+
+.organizedEventName::after {
+	margin: -1.3rem 0;
+}
+
+.organizedEventDescription {
+	font-size: 0.9rem;
+	margin: 0.3rem 0 0;
+}
+
+.organizedEventDetailsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.organizedEventDetail {
+	margin: 0.5rem 0.5rem 0.9rem 0;
+}
+
+.organizerers {
+	display: flex;
+	flex-direction: column;
+}
+
+.organizerer {
+	margin-bottom: 0.5rem;
+}
+
+.organizererContact a{
+	color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+	.organizedEventDetailsContainer {
+		flex-direction: column;
+	}
+}
