@@ -58,3 +58,14 @@ function setOrganizedEvent(subEventCode = "nope") {
 
 	organizedEventsContainer.innerHTML = html
 }
+
+function setEventCoreDetails(organizedEvent) {
+    return `
+        <span class="contentHeading organizedEventName">${organizedEvent.subEventName}</span>
+        <span class="organizedEventDescription">${organizedEvent.subEventDesc}</span>
+        <span class="eventHeading">Duration:</span>
+        <span class="organizedEventDuration">${organizedEvent.subEventDuration}</span>
+        <span class="eventHeading">Rules:</span>
+    `
+}
+
