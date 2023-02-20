@@ -105,3 +105,25 @@ function setEventRules(organizedEvent) {
 	return html
 }
 
+function setEventDetails(organizedEvent) {
+	return `
+        <div class="organizedEventDetailsContainer">
+            <div class="organizedEventDetail">
+                <span class="eventHeading">Date:</span>
+                <span class="organizedEventSubDetail">${organizedEvent.subEventDate}</span>
+            </div>
+            <div class="organizedEventDetail">
+                <span class="eventHeading">Time:</span>
+                <span class="organizedEventSubDetail">${organizedEvent.subEventTime}</span>
+            </div>
+            <div class="organizedEventDetail">
+                <span class="eventHeading">Venue:</span>
+                <span class="organizedEventSubDetail">${organizedEvent.subEventVenue}</span>
+            </div>
+            <div class="organizedEventDetail">
+                <span class="eventHeading">Team Size:</span>
+                <span class="organizedEventSubDetail">${organizedEvent.subEventTeamSize}</span>
+            </div>
+        </div>
+    `
+}
