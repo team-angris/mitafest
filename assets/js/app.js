@@ -16,6 +16,7 @@ let secondsLeft = document.getElementById("secondsLeft")
 let heroImageContainer = document.querySelector(".heroImageContainer")
 let heroFirst = document.querySelector(".heroFirst")
 let heroSecond = document.querySelector(".heroSecond")
+let eventCards = document.querySelectorAll(".eventCard")
 
 let navLinksDiv = document.querySelector(".navigation")
 let navLinksSpan = navLinksDiv.children
@@ -40,6 +41,13 @@ heroImageContainer.addEventListener("mouseout", function () {
 
 heroImageContainer.dispatchEvent(mouseOverEvent)
 heroImageContainer.dispatchEvent(mouseOutEvent)
+
+eventCards.forEach((eventCard) => {
+	eventCard.addEventListener("click", function () {
+		let eventName = eventCard.getAttribute("data-eventName")
+		window.location.href = `/eventInfo?eventCode=${eventName}`
+	})
+})
 
 let copyright = document.querySelector(".copyrights")
 
