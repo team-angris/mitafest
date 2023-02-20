@@ -127,3 +127,6 @@ function setEventDetails(organizedEvent) {
         </div>
     `
 }
+
+setOrganizedEventsHeading()
+setOrganizedEvent()
