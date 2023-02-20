@@ -94,3 +94,14 @@ function setEventOrganizers(organizedEvent) {
     return html
 }
 
+function setEventRules(organizedEvent) {
+	let html = `<ul>`
+	organizedEvent.subEventRules.forEach((rule) => {
+		html += `
+            <li>${rule}</li>
+        `
+	})
+	html += `</ul>`
+	return html
+}
+
