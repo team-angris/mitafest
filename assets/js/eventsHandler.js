@@ -40,3 +40,21 @@ function setOrganizedEventsHeading() {
 	organizedEventsHeadingContainer.innerHTML = someHTML
 }
 
+function setOrganizedEvent(subEventCode = "nope") {
+	let html = ""
+
+	if (subEventCode == "nope") {
+		subEventCode = mitafestEvent.organizedEvents[0].subEventCode
+	}
+
+	let organizedEvent = mitafestEvent.organizedEvents.find(
+		(organizedEvent) => organizedEvent.subEventCode == subEventCode
+	)
+
+	html += setEventCoreDetails(organizedEvent)
+	html += setEventRules(organizedEvent)
+	html += setEventDetails(organizedEvent)
+    html += setEventOrganizers(organizedEvent)
+
+	organizedEventsContainer.innerHTML = html
+}
