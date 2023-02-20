@@ -130,3 +130,15 @@ function setEventDetails(organizedEvent) {
 
 setOrganizedEventsHeading()
 setOrganizedEvent()
+
+document.addEventListener("click", (e) => {
+	if (e.target.classList.contains("organizedEventsHeading")) {
+		setOrganizedEvent(e.target.dataset.id)
+		document
+			.querySelectorAll(".organizedEventsHeading")
+			.forEach((heading) => {
+				heading.classList.remove("selected")
+			})
+		e.target.classList.add("selected")
+	}
+})
