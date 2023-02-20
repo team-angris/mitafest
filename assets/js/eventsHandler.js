@@ -23,3 +23,20 @@ if (!mitafestEvent) {
 contentHeading.innerHTML = mitafestEvent.eventName
 contentSubHeading.innerHTML = mitafestEvent.eventTagName
 
+function setOrganizedEventsHeading() {
+	let someHTML = ""
+	mitafestEvent.organizedEvents.forEach((organizedEvent, index) => {
+		let isSelected = index === 0 ? "selected" : ""
+		someHTML += `
+        <span 
+        class="organizedEventsHeading ${isSelected}" 
+        data-id="${organizedEvent.subEventCode}"
+        >
+        ${organizedEvent.subEventName}
+        </span>
+        `
+	})
+
+	organizedEventsHeadingContainer.innerHTML = someHTML
+}
+
