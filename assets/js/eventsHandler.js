@@ -69,3 +69,28 @@ function setEventCoreDetails(organizedEvent) {
     `
 }
 
+function setEventOrganizers(organizedEvent) {
+	let html = `
+        <div class="organizerers">
+            <span class="eventHeading">Organizers:</span>
+            <div class="organizerersContainer">
+    `
+
+	organizedEvent.subEventOrganizers.forEach((organizer) => {
+		html += `
+                <div class="organizerer">
+                    <span class="organizererName">${organizer.subEventOrganizerName},</span>
+                    <span class="organizererContact">
+                        <a href="tel:+91 ${organizer.subEventOrganizerContact}">+91 ${organizer.subEventOrganizerContact}</a>
+                    </span>
+                </div>
+            `
+	})
+
+	html += `</div>
+        </div>
+    `
+
+    return html
+}
+
