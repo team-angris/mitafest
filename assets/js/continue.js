@@ -27,13 +27,13 @@ let availablePasses = [
 	},
 	{
 		name: "Friday Events Pass",
-		price: 300,
+		price: 250,
 		type: "10",
 		imgSrc: "1",
 	},
 	{
 		name: "Saturday Events Pass",
-		price: 300,
+		price: 250,
 		type: "5",
 		imgSrc: "4",
 	},
