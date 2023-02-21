@@ -233,58 +233,70 @@ let events = [
         eventTagName: "The Literary Club of MIT",
         organizedEvents: [
             {
-                subEventName: "Just A Minute(JAM)",
-                subEventCode: "jam",
+                subEventName: "ENAKU ORU UNMA THERINJAGANUM SAAMI - GENERAL QUIZ",
+                subEventCode: "eouts",
                 subEventDesc:
-                    "A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
+                    "A good old-fashioned general quiz that tests your knowledge on a wide range of topics from fandom, to current affairs, to technology, to business.",
                 subEventDuration:
                     "3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
                 subEventRules: [
-                    "The event includes two rounds. ",
-                    "The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
-                    "The top 5 participants will be selected for the final round. ",
-                    "The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+                    "Prelims (Written round)",
+                    "Final (Format will be notified during event)",
+                    "Teams of two and lone wolves are welcome.",
+                    "Cross college teams are allowed.",
+                    "Top six teams from the prelims will qualify for the finals.",
+                    "Scoring scheme will be mentioned at the beginning of each round.",
+                    "The Quiz Master’s decision is final.",
                 ],
                 subEventDate: friday,
-                subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
-                subEventVenue: "Mini Auditorium",
-                subEventTeamSize: "1",
+                subEventTime: "Prelims - 9:30am to 10:30am, Finals - 10:30am to 12pm",
+                subEventVenue: "RLHC 002",
+                subEventTeamSize: "1-2",
                 subEventOrganizers: [
                     {
-                        subEventOrganizerName: "Ramana",
-                        subEventOrganizerContact: "82021-210-1220",
+                        subEventOrganizerName: "Abhijit",
+                        subEventOrganizerContact: "9840406710",
                     },
                     {
-                        subEventOrganizerName: "Deepshika",
-                        subEventOrganizerContact: "82021-210-1220",
+                        subEventOrganizerName: "Gokul",
+                        subEventOrganizerContact: "9840955017",
+                    },
+                    {
+                        subEventOrganizerName: "Aditya",
+                        subEventOrganizerContact: "9444668092",
                     },
                 ],
             },
             {
-                subEventName: "Lawyer Up",
-                subEventCode: "lawyerup",
+                subEventName: "EVERYTHING IS A ONE WHOLESOME ENTERTAINMENT - POP CULTURE QUIZ",
+                subEventCode: "eiaowe",
                 subEventDesc:
-                    "A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
+                    "Are you a person who binge watches a lot? This quiz is the best place for you to put theknowledge gained from binge watching to use.",
                 subEventDuration:
                     "3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
                 subEventRules: [
-                    "The event includes two rounds. ",
-                    "The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
-                    "The top 5 participants will be selected for the final round. ",
-                    "The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+                    "Teams of two and lone wolves are welcome.",
+                    "Cross college teams are allowed.",
+                    "Top six teams from the prelims will qualify for the finals.",
+                    "Scoring scheme will be mentioned at the beginning of each round.",
+                    "The Quiz Master’s decision is final.",
                 ],
                 subEventDate: friday,
-                subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
-                subEventVenue: "Mini Auditorium",
-                subEventTeamSize: "1",
+                subEventTime: "Prelims - 9:30am to 10:30am, Finals - 10:30am to 12pm",
+                subEventVenue: "RLHC 002",
+                subEventTeamSize: "1-2",
                 subEventOrganizers: [
                     {
-                        subEventOrganizerName: "Ramana",
-                        subEventOrganizerContact: "82021-210-1220",
+                        subEventOrganizerName: "Keerthi",
+                        subEventOrganizerContact: "6374089449",
                     },
                     {
-                        subEventOrganizerName: "Deepshika",
-                        subEventOrganizerContact: "82021-210-1220",
+                        subEventOrganizerName: "Kishor",
+                        subEventOrganizerContact: "7904145676",
+                    },
+                    {
+                        subEventOrganizerName: "Abhijit",
+                        subEventOrganizerContact: "9840406710",
                     },
                 ]
             },
@@ -481,21 +493,52 @@ let events = [
     },  
     {
         eventCode: "ted",
-        eventName: "MIT QUILL",
-        eventTagName: "The Literary Club of MIT",
+        eventName: "TED",
+        eventTagName: "TED CLUB of MIT",
         organizedEvents: [
             {
-                subEventName: "Just A Minute(JAM)",
-                subEventCode: "jam",
+                subEventName: "Treasure Hunt",
+                subEventCode: "th",
                 subEventDesc:
                     "A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
                 subEventDuration:
                     "3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
                 subEventRules: [
-                    "The event includes two rounds. ",
-                    "The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
-                    "The top 5 participants will be selected for the final round. ",
-                    "The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+                    "Treasure will be hidden all around the campus and the clues will be given to the participants",
+                    "The group which finds the most number of treasures within one hour will be declared as the winne",
+                    "Clues will be updated in real time - Look out for “Bonus Clues” ",
+                    "The participants should not use any mode of transport/vehicle inside the campus",
+                    "Only single round (Tie Breaker if needed) will be conducted"
+                ],
+                subEventDate: friday,
+                subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
+                subEventVenue: "Mini Auditorium",
+                subEventTeamSize: "1-3",
+                subEventOrganizers: [
+                    {
+                        subEventOrganizerName: "Ramana",
+                        subEventOrganizerContact: "82021-210-1220",
+                    },
+                    {
+                        subEventOrganizerName: "Deepshika",
+                        subEventOrganizerContact: "82021-210-1220",
+                    },
+                ],
+            },
+            {
+                subEventName: "Mad Ads",
+                subEventCode: "ma",
+                subEventDesc:
+                    "A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
+                subEventDuration:
+                "Preparation time - 3 mins, Performance time - 3 mins, Rebuttal - 1 min",
+                subEventRules: [
+                    "The contestants will be given a product to advertise",
+                    "The presentation may be in the form of a talk or an act",
+                    "The Ad prepared by the contestant must not contain any obscene words/any subject that hurts the feelings of culture/language/religion/ region",
+                    "Negative marking for defying rules",
+                    "Time limit must be strictly followed",
+                    "The judge's decision if final and abiding"
                 ],
                 subEventDate: friday,
                 subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
@@ -510,20 +553,20 @@ let events = [
                         subEventOrganizerName: "Deepshika",
                         subEventOrganizerContact: "82021-210-1220",
                     },
-                ],
+                ]
             },
             {
-                subEventName: "Lawyer Up",
-                subEventCode: "lawyerup",
+                subEventName: "Ready to Lead?",
+                subEventCode: "rtl",
                 subEventDesc:
-                    "A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
+                    "The topic or the scenario will be given on spot",
                 subEventDuration:
-                    "3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
+                "Preparation time - 3 mins, Performance time - 3 mins, Deliberation/Question hour - 2 mins",
                 subEventRules: [
-                    "The event includes two rounds. ",
-                    "The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
-                    "The top 5 participants will be selected for the final round. ",
-                    "The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+                    "Judging is based on points from judges and voting of the audience                    ",
+                    "No Language Barrier",
+                    "The presentation may be in the form of a talk or an act",
+                    "Extra brownie points for participating in the deliberation/question hour session",
                 ],
                 subEventDate: friday,
                 subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
