@@ -164,63 +164,65 @@ let events = [
 	},
 	{
 		eventCode: "entrepreneurship",
-		eventName: "Startup WorldCup ‘23",
-		eventTagName: "Entrepreneurship Club",
+		eventName: "MIT QUILL",
+		eventTagName: "The Literary Club of MIT",
 		organizedEvents: [
 			{
-				subEventName: "Idea Pitch",
-				subEventCode: "Round 1",
+				subEventName: "Just A Minute(JAM)",
+				subEventCode: "jam",
 				subEventDesc:
 					"A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
 				subEventDuration:
 					"3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
 				subEventRules: [
-					"Participants will have to create a powerpoint presentation on their idea beforehand.",
-					"Participants are then required to pitch their idea.",
-					"Participants pitch should not exceed more than 7 minutes.",
-					"A prototype/model design if portrayed during the pitch is appreciated.",
-					"Teams are encouraged to pitch their ideas in an innovative format.",
-					"Any participant resorting to unfair practices will be directly disqualified from the challenge.",
+					"The event includes two rounds. ",
+					"The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+					"The top 5 participants will be selected for the final round. ",
+					"The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
 				],
-				subEventDate: Allday,
-				subEventTime: "9 AM - 12 PM",
+				subEventDate: friday,
+				subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
 				subEventVenue: "Mini Auditorium",
-				subEventTeamSize: "1-3",
+				subEventTeamSize: "1",
 				subEventOrganizers: [
 					{
-						subEventOrganizerName: "Akash",
-						subEventOrganizerContact: "+91 96000 37310",
+						subEventOrganizerName: "Ramana",
+						subEventOrganizerContact: "82021-210-1220",
 					},
-					
+					{
+						subEventOrganizerName: "Deepshika",
+						subEventOrganizerContact: "82021-210-1220",
+					},
 				],
 			},
 			{
-				subEventName: "Shark Tank",
-				subEventCode: "Round 2",
+				subEventName: "Lawyer Up",
+				subEventCode: "lawyerup",
 				subEventDesc:
 					"A standard, god ol' just-a-min; 60 mins of coherent thoughts with proper chronology and remember, no fillers, no repetition, and most importantly, no deviation. This will be an individual event",
 				subEventDuration:
 					"3 hours (ideally); if no. of participants are higher and decision making is difficult with one round, might require prelims + finals",
 				subEventRules: [
-					"This round is a Classic Shark Tank event with a twist; each pitching team will get to be the sharks for other pitching teams.",
-					"Teams will have 4 minutes to present their idea to the sharks and 6 minutes to interact with the sharks to get them to invest in their product.",
-					"Every Shark will be alloted a budget as well.",
-					"Teams will be judged based on their pitch as well as their status as Sharks.",
-					"In addition, a panel of judges will be present to judge the shark tank event.",
-					"Prerequisites: Participants must briefly know about business pitching & shark tank show. The teams pitching their ideas are expected to cover their product’s problem statement and how they intend to solve it, the amount of funding they’d require, market edge, etc.",
+					"The event includes two rounds. ",
+					"The first round is a preliminary round. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
+					"The top 5 participants will be selected for the final round. ",
+					"The final round will be a debate. The participants will be given a topic and they will have to speak on it for 1 minute. The participants will be judged on their fluency, clarity, and the ability to stick to the topic. ",
 				],
 				subEventDate: friday,
-				subEventTime: "",
+				subEventTime: "Prelims - 10 AM to 1 PM, Finals - 2 PM to 4 PM",
 				subEventVenue: "Mini Auditorium",
-				subEventTeamSize: "1-3",
+				subEventTeamSize: "1",
 				subEventOrganizers: [
 					{
-						subEventOrganizerName: "Akash",
-						subEventOrganizerContact: "+91 96000 37310",
+						subEventOrganizerName: "Ramana",
+						subEventOrganizerContact: "82021-210-1220",
+					},
+					{
+						subEventOrganizerName: "Deepshika",
+						subEventOrganizerContact: "82021-210-1220",
 					},
 				],
 			},
-		],
 	},
 	{
 		eventCode: "question",
