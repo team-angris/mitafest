@@ -1457,3 +1457,65 @@ body {
 	font-size: 1.2rem;
 	margin-left: 5px;
 }
+
+
+.materialStatus {
+    position: fixed;
+    bottom: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: #323232;
+    color: white;
+    left: 2rem;
+    animation: closeMaterialStatus 0.2s linear 1 reverse forwards;
+}
+
+@media screen and (max-width: 480px) {
+    .materialStatus {
+        width: 85vw;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+                transform: translate(-50%);
+    }
+}
+
+@-webkit-keyframes closeMaterialStatus {
+    0% {
+        bottom: 30px;
+    }
+    25% {
+        bottom: 15px;
+    }
+    50% {
+        bottom: 0px;
+    }
+    75% {
+        bottom: -30px;
+    }
+    100% {
+        bottom: -60px;
+    }
+}
+
+@keyframes closeMaterialStatus {
+    0% {
+        bottom: 30px;
+    }
+    25% {
+        bottom: 15px;
+    }
+    50% {
+        bottom: 0px;
+    }
+    75% {
+        bottom: -30px;
+    }
+    100% {
+        bottom: -60px;
+    }
+}

@@ -129,4 +129,14 @@ async function main() {
 	addCoreEvents()
 }
 
+function stat(e) {
+	let t = ` <div class="materialStatus"><span>${e}</span></div>`
+	;(t = new DOMParser().parseFromString(t, "text/html")),
+		(t = t.querySelector("div.materialStatus")),
+		document.body.appendChild(t),
+		setTimeout(() => {
+			t.style.animation = "closeMaterialStatus 0.2s linear 5s 1 forwards"
+		}, 5e3)
+}
+
 main()
