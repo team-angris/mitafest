@@ -110,6 +110,19 @@ function createDayEventsHTML(dayEvents) {
 	})
 	return dayEventsHTML
 }
+
+function addCoreEvents() {
+	let thursdayEventsDiv = document.querySelector(".dayEventsContainer.thursday")
+	let fridayEventsDiv = document.querySelector(".dayEventsContainer.friday")
+	let saturdayEventsDiv = document.querySelector(".dayEventsContainer.saturday")
+	let sundayEventsDiv = document.querySelector(".dayEventsContainer.sunday")
+
+	thursdayEventsDiv.innerHTML = createDayEventsHTML(publicEventsThursday)
+	fridayEventsDiv.innerHTML = createDayEventsHTML(publicEventsFriday)
+	saturdayEventsDiv.innerHTML = createDayEventsHTML(publicEventsSaturday)
+	sundayEventsDiv.innerHTML = createDayEventsHTML(publicEventsSunday)	
+}
+
 async function main() {
 	updateTime()
 	embedCopyRight()
