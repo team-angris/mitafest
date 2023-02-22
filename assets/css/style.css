@@ -944,3 +944,516 @@ body {
 	text-decoration: underline;
 	color: #f1b539;
 }
+
+/* EVENT TABS */
+
+.eventTabs {
+	margin-top: 2rem;
+}
+
+.tabs {
+	background: #ffffff21;
+	padding: 10px;
+	padding-bottom: 80px;
+	width: 88%;
+	min-height: 250px;
+	-webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	border-radius: 5px;
+	min-width: 242px;
+}
+
+.tabs input[name="tab-control"] {
+	display: none;
+}
+
+.tabs .content section h2,
+.tabs ul li label {
+	font-family: "Inter";
+	font-weight: bold;
+	font-size: 18px;
+	color: #0070f3;
+}
+
+.tabs ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	margin-bottom: 10px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.tabs ul li {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 25%;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.tabs ul li label {
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color: #929daf;
+	padding: 5px auto;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: block;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.tabs ul li label br {
+	display: none;
+}
+
+.tabs ul li label svg {
+	fill: #929daf;
+	height: 1.2em;
+	vertical-align: bottom;
+	margin-right: 0.2em;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.tabs ul li label:hover,
+.tabs ul li label:focus,
+.tabs ul li label:active {
+	outline: 0;
+	color: #bec5cf;
+}
+
+.tabs ul li label:hover svg,
+.tabs ul li label:focus svg,
+.tabs ul li label:active svg {
+	fill: #bec5cf;
+}
+
+.tabs .slider {
+	position: relative;
+	width: 25%;
+	-webkit-transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+	-o-transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+	transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+
+.tabs .slider .indicator {
+	position: relative;
+	width: 50px;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 4px;
+	background: #428bff;
+	border-radius: 1px;
+}
+
+.tabs .content {
+	margin-top: 30px;
+}
+
+.tabs .content section {
+	color: white;
+	display: none;
+	-webkit-animation-name: content;
+	animation-name: content;
+	-webkit-animation-direction: normal;
+	animation-direction: normal;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	line-height: 1.4;
+}
+
+.tabs .content section h2 {
+	color: #428bff;
+	display: none;
+}
+
+.tabs .content section h2::after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #428bff;
+	margin-top: 5px;
+	left: 1px;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(1):checked
+	~ ul
+	> li:nth-child(1)
+	> label {
+	cursor: default;
+	color: #428bff;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(1):checked
+	~ ul
+	> li:nth-child(1)
+	> label
+	svg {
+	fill: #428bff;
+}
+
+@media (max-width: 600px) {
+	.tabs
+		input[name="tab-control"]:nth-of-type(1):checked
+		~ ul
+		> li:nth-child(1)
+		> label {
+		background: rgba(0, 0, 0, 0.08);
+	}
+}
+
+.tabs input[name="tab-control"]:nth-of-type(1):checked ~ .slider {
+	-webkit-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(1):checked
+	~ .content
+	> section:nth-child(1) {
+	display: block;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(2):checked
+	~ ul
+	> li:nth-child(2)
+	> label {
+	cursor: default;
+	color: #428bff;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(2):checked
+	~ ul
+	> li:nth-child(2)
+	> label
+	svg {
+	fill: #428bff;
+}
+
+@media (max-width: 600px) {
+	.tabs
+		input[name="tab-control"]:nth-of-type(2):checked
+		~ ul
+		> li:nth-child(2)
+		> label {
+		background: rgba(0, 0, 0, 0.08);
+	}
+}
+
+.tabs input[name="tab-control"]:nth-of-type(2):checked ~ .slider {
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(2):checked
+	~ .content
+	> section:nth-child(2) {
+	display: block;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(3):checked
+	~ ul
+	> li:nth-child(3)
+	> label {
+	cursor: default;
+	color: #428bff;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(3):checked
+	~ ul
+	> li:nth-child(3)
+	> label
+	svg {
+	fill: #428bff;
+}
+
+@media (max-width: 600px) {
+	.tabs
+		input[name="tab-control"]:nth-of-type(3):checked
+		~ ul
+		> li:nth-child(3)
+		> label {
+		background: rgba(0, 0, 0, 0.08);
+	}
+}
+
+.tabs input[name="tab-control"]:nth-of-type(3):checked ~ .slider {
+	-webkit-transform: translateX(200%);
+	-ms-transform: translateX(200%);
+	transform: translateX(200%);
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(3):checked
+	~ .content
+	> section:nth-child(3) {
+	display: block;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(4):checked
+	~ ul
+	> li:nth-child(4)
+	> label {
+	cursor: default;
+	color: #428bff;
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(4):checked
+	~ ul
+	> li:nth-child(4)
+	> label
+	svg {
+	fill: #428bff;
+}
+
+@media (max-width: 600px) {
+	.tabs
+		input[name="tab-control"]:nth-of-type(4):checked
+		~ ul
+		> li:nth-child(4)
+		> label {
+		background: rgba(0, 0, 0, 0.08);
+	}
+}
+
+.tabs input[name="tab-control"]:nth-of-type(4):checked ~ .slider {
+	-webkit-transform: translateX(300%);
+	-ms-transform: translateX(300%);
+	transform: translateX(300%);
+}
+
+.tabs
+	input[name="tab-control"]:nth-of-type(4):checked
+	~ .content
+	> section:nth-child(4) {
+	display: block;
+}
+
+@-webkit-keyframes content {
+	from {
+		opacity: 0;
+		-webkit-transform: translateY(5%);
+		transform: translateY(5%);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+}
+
+@keyframes content {
+	from {
+		opacity: 0;
+		-webkit-transform: translateY(5%);
+		transform: translateY(5%);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+}
+
+@media (max-width: 1000px) {
+	.tabs ul li label {
+		white-space: initial;
+	}
+
+	.tabs ul li label br {
+		display: initial;
+	}
+
+	.tabs ul li label svg {
+		height: 1.5em;
+	}
+}
+
+@media (max-width: 600px) {
+	.tabs ul li label {
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	.tabs ul li label span {
+		display: none;
+	}
+
+	.tabs .slider {
+		display: none;
+	}
+
+	.tabs .content {
+		margin-top: 20px;
+	}
+
+	.tabs .content section h2 {
+		display: block;
+		padding-left: 1rem;
+	}
+}
+
+.dayEventsContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.dayEventCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	border-radius: 11px;
+	border: 1px solid #ffffff26;
+	-webkit-box-shadow: 3px 3px 0 0 #f2f2f233;
+	box-shadow: 3px 3px 0 0 #f2f2f233;
+	padding: 1rem;
+	min-width: 300px;
+	min-height: 132px;
+	margin: 0.5rem;
+}
+
+.dayEventTimings {
+	color: #e67e22;
+	width: 100%;
+	text-align: right;
+}
+
+.dayEventName {
+	margin-top: 0.5rem;
+	margin-bottom: 10px;
+	font-family: "Inter";
+	font-weight: 600;
+	font-size: 1.4rem;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ef5350),
+		color-stop(#f48fb1),
+		color-stop(#7e57c2),
+		color-stop(#2196f3),
+		color-stop(#26c6da),
+		color-stop(#43a047),
+		color-stop(#eeff41),
+		color-stop(#f9a825),
+		to(#ff5722)
+	);
+	background: -o-linear-gradient(
+		left,
+		#ef5350,
+		#f48fb1,
+		#7e57c2,
+		#2196f3,
+		#26c6da,
+		#43a047,
+		#eeff41,
+		#f9a825,
+		#ff5722
+	);
+	background: linear-gradient(
+		to right,
+		#ef5350,
+		#f48fb1,
+		#7e57c2,
+		#2196f3,
+		#26c6da,
+		#43a047,
+		#eeff41,
+		#f9a825,
+		#ff5722
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: block;
+	max-width: 280px;
+}
+
+.dayEventLocation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.dayEventLocationText {
+	color: #f1c40f;
+	font-size: 1.2rem;
+	margin-left: 5px;
+}
