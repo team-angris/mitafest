@@ -126,6 +126,7 @@ function addCoreEvents() {
 async function main() {
 	updateTime()
 	embedCopyRight()
+	addCoreEvents()
 }
 
 main()
