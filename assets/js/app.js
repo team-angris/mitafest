@@ -103,6 +103,13 @@ function createDailyEventHTML({
 	`
 }
 
+function createDayEventsHTML(dayEvents) {
+	let dayEventsHTML = ""
+	dayEvents.forEach((dayEvent) => {
+		dayEventsHTML += createDailyEventHTML(dayEvent)
+	})
+	return dayEventsHTML
+}
 async function main() {
 	updateTime()
 	embedCopyRight()
