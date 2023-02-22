@@ -85,6 +85,24 @@ function updateTime() {
 	setTimeout(updateTime, 1000)
 }
 
+function createDailyEventHTML({
+	eventTimingsStart,
+	eventTimingsEnd,
+	eventName,
+	eventLocation
+}) {
+	return `
+		<div class="dayEventCard">
+			<span class="dayEventTimings">${eventTimingsStart} to ${eventTimingsEnd}</span>
+			<span class="dayEventName">${eventName.toUpperCase()}</span>
+			<div class="dayEventLocation">
+				<img src="./assets/images/days/location.webp" alt="Location" height="25" width="25">
+				<span class="dayEventLocationText">${eventLocation}</span>
+			</div>
+		</div>
+	`
+}
+
 async function main() {
 	updateTime()
 	embedCopyRight()
