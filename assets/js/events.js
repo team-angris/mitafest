@@ -223,6 +223,7 @@ let events = [
 					},
 				],
 			},
+		]
 	},
 	{
 		eventCode: "question",
